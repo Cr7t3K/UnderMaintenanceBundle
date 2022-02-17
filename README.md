@@ -13,7 +13,7 @@ Register bundle into `config/bundles.php`:
 ```php
 return [
     //.....
-    Cvr\UnderMaintenanceBundle\CvrUnderMaintenanceBundle::class => ['all' => true],
+    Cvr\UnderMaintenanceBundle\UnderMaintenanceBundle::class => ['all' => true],
 ];
 ```
 
