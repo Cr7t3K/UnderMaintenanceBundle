@@ -4,6 +4,6 @@ namespace Cvr\UnderMaintenanceBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class CvrUnderMaintenanceBundle extends Bundle
+class UnderMaintenanceBundle extends Bundle
 {
 }
