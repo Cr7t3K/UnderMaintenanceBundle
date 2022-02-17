@@ -1,0 +1,21 @@
+{
+    "name": "cvr/under-maintenance-bundle",
+    "description": "Symfony Bundle for maintenance",
+    "keywords": ["maintenance", "developpement", "bundle"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guillaume Clavurier",
+            "email": "cvr.contact.pro@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cvr\\UnderMaintenanceBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    }
+}

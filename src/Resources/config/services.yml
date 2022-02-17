@@ -1,0 +1,17 @@
+parameters:
+  app_maintenance: '%env(MAINTENANCE)%'
+  app_maintenance_token: '%env(MAINTENANCE_TOKEN)%'
+
+services:
+
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Cvr\UnderMaintenanceBundle\:
+    resource: '../../*'
+    exclude: '../../{DependencyInjection,Entity,Form,Migrations,Tests}'
+
+  Cvr\UnderMaintenanceBundle\EventListener\MaintenanceListener:
+    tags:
+      - { name: kernel.event_listener, event: kernel.response, priority: 255 }
