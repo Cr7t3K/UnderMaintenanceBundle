@@ -39,8 +39,9 @@ http://your-domain?maintenance=<your-token>
 Override Maintenance Templates
 ==============================
 
-Create new folder named `UnderMaintenanceBundle` in your `templates/` application and create new twig template `maintenance.html.twig`.
+Create new folder named `UnderMaintenanceBundle` in your `templates/bundles/` application and create new twig template `maintenance.html.twig`.
 
+> Then, don't forget to clear the cache `php bin/console cache:clear`
 
 ```
 ├── bin/
@@ -48,9 +49,9 @@ Create new folder named `UnderMaintenanceBundle` in your `templates/` applicatio
 ├── public/
 ├── src/
 ├── templates/
-│   └── UnderMaintenanceBundle
-│       └── maintenance.html.twig
+│   └── bundles/
+│       └── UnderMaintenanceBundle/
+│           └── maintenance.html.twig
 ├── tests/
 ├── translations/
 ```
-

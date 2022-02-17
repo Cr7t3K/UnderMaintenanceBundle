@@ -39,7 +39,7 @@ class MaintenanceListener
 
         if ($requestToken !== $maintenanceToken && $cookieToken !== $maintenanceToken) {
             $event->getResponse()->setContent(
-                $this->twig->render('@CvrUnderMaintenance/maintenance.html.twig')
+                $this->twig->render('@UnderMaintenance/maintenance.html.twig')
             );
             return;
         }
